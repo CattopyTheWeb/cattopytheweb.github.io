@@ -81,6 +81,7 @@ body {
     line-height: 1.2;
 }
 
+/* typing effect */
 
 .home-content h1 {
     overflow: hidden; /* Ensures the content is not revealed until the animation */
@@ -89,21 +90,21 @@ body {
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
     letter-spacing: .12em; /* Adjust as needed */
     animation: 
-      typing 2.5s steps(40, end),
-      blink-caret .75s step-end infinite;
-  }
-  
+    typing 2.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+    }
+
   /* The typing effect */
-  @keyframes typing {
+    @keyframes typing {
     from { width: 0 }
     to { width: 100% }
-  }
-  
+    }
+
   /* The typewriter cursor effect */
-  @keyframes blink-caret {
+    @keyframes blink-caret {
     from, to { border-color: transparent }
     50% { border-color: gold; }
-  }
+    }
 
 
 /* .home-content h1::before {
@@ -221,7 +222,7 @@ body {
 .home-sci {
     position: absolute;
     bottom: 40px;
-    width: 170px;
+    width: 94px;
     display: flex;
     justify-content: space-between;
 }
@@ -285,12 +286,12 @@ body {
     width: 500px;
     height: 100%;
     background: transparent;
-    transform: 3s;
+    transition: background 3s, opacity 3s;
 }
 
 .home-imgHover:hover {
     background: #1b2427;
-    opacity: .8;
+    opacity: .9;
 }
 
 
@@ -300,3 +301,92 @@ body {
         width: 0;
     }
 }
+
+.about {
+    height: 100vh;
+    background: url("portfolio_backgroud.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.about-content {
+    max-width: 600px;
+}
+
+
+.about-content code {
+    position: relative;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+
+/* typing effect */
+
+.about-content code {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid gold; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .12em; /* Adjust as needed */
+    animation: 
+    typing 2.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+    }
+
+  /* The typing effect */
+    @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+    }
+
+  /* The typewriter cursor effect */
+    @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: gold; }
+    }
+
+.about-content h2{
+    line-height: 2.5;
+}
+
+
+.about-content a:visited {
+  color: gold;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.about-content a:hover {
+  color: turquoise;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+
+.contact {
+    height: 100vh;
+    background: url("portfolio_backgroud.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.contact a:visited {
+    color: gold;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.contact a:hover {
+color: turquoise;
+background-color: transparent;
+text-decoration: underline;
+}
+
