@@ -378,15 +378,20 @@ body {
     padding: 0 10%;
 }
 
-.contact a:visited {
+.contact-content a,
+.contact-content a:visited {
     color: gold;
     background-color: transparent;
     text-decoration: none;
 }
 
-.contact a:hover {
+.contact-content a:hover {
 color: turquoise;
 background-color: transparent;
 text-decoration: underline;
+}
+
+.contact-content a:active {
+    color: blue;
 }
 
